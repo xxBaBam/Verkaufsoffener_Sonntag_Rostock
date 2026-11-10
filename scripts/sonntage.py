@@ -25,6 +25,8 @@ from collections import Counter
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+import icsversion
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "daten"
 OUT = ROOT / "docs"
@@ -364,6 +366,8 @@ def main() -> int:
     FILE.write_text(json.dumps(events, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     KEEPALIVE_FILE.write_text(f"{today:%Y-%m}\n", encoding="utf-8")  # monatlicher Commit gegen Abschalten
     (OUT / "sonntage.ics").write_text(render_ics(events), encoding="utf-8", newline="")
+    n = icsversion.stamp(OUT / "sonntage.ics", DATA / "ics-versionen.json")
+    print(f"{n} Termine mit neuer Version (damit Kalender-Apps Aenderungen uebernehmen)")
     (OUT / "index.html").write_text(render_page(events, today), encoding="utf-8")
     if ok < 2:
         print(f"::warning::Nur {ok} Quelle(n) erreichbar – Abgleich eingeschränkt")
