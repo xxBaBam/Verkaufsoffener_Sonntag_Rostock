@@ -1,0 +1,71 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//verkaufsoffener-sonntag-rostock//DE
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Verkaufsoffene Sonntage Rostock
+X-WR-TIMEZONE:Europe/Berlin
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VEVENT
+UID:20260329@verkaufsoffener-sonntag-rostock
+DTSTAMP:20260101T000000Z
+DTSTART:20260329T110000Z
+DTEND:20260329T160000Z
+SUMMARY:🛍️ Verkaufsoffener Sonntag Rostock – Ostermarkt Rostock (un
+ bestätigt)
+LOCATION:Rostock\, Innenstadt
+DESCRIPTION:Geöffnet: 13:00–18:00 Uhr (teilnehmende Geschäfte\, v. a. 
+ Innenstadt)\nAnlass: Ostermarkt Rostock\n\nDie Teilnahme ist freiwillig 
+ – nicht alle Geschäfte haben geöffnet.\nAchtung: Dieser Termin wird nu
+ r von einer Quelle genannt.\n\nQuellen: verkaufsoffener-sonntag.nrw\nAngab
+ en ohne Gewähr.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20261004@verkaufsoffener-sonntag-rostock
+DTSTAMP:20260101T000000Z
+DTSTART:20261004T110000Z
+DTEND:20261004T160000Z
+SUMMARY:🛍️ Verkaufsoffener Sonntag Rostock – Herbstmarkt Rostock (u
+ nbestätigt)
+LOCATION:Rostock\, Innenstadt
+DESCRIPTION:Geöffnet: 13:00–18:00 Uhr (teilnehmende Geschäfte\, v. a. 
+ Innenstadt)\nAnlass: Herbstmarkt Rostock\n\nDie Teilnahme ist freiwillig 
+ – nicht alle Geschäfte haben geöffnet.\nAchtung: Dieser Termin wird nu
+ r von einer Quelle genannt.\n\nQuellen: verkaufsoffener-sonntag.nrw\nAngab
+ en ohne Gewähr.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20261108@verkaufsoffener-sonntag-rostock
+DTSTAMP:20260101T000000Z
+DTSTART:20261108T110000Z
+DTEND:20261108T160000Z
+SUMMARY:🛍️ Verkaufsoffener Sonntag Rostock – Schlusstag der Rostock
+ er Lichtwoche (Innenstadt)
+LOCATION:Rostock\, Innenstadt
+DESCRIPTION:Geöffnet: 12:00–17:00 Uhr (teilnehmende Geschäfte\, v. a. 
+ Innenstadt)\nAbweichende Angaben: 13:00–17:00 Uhr (z. B. einzelne Center
+ )\nAnlass: Schlusstag der Rostocker Lichtwoche (Innenstadt)\n\nDie Teilnah
+ me ist freiwillig – nicht alle Geschäfte haben geöffnet.\n\nQuellen: s
+ onntagsoffen.de\, verkaufsoffener-sonntag.com\nAngaben ohne Gewähr.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129@verkaufsoffener-sonntag-rostock
+DTSTAMP:20260101T000000Z
+DTSTART:20261129T120000Z
+DTEND:20261129T170000Z
+SUMMARY:🛍️ Verkaufsoffener Sonntag Rostock – Weihnachtsmarkt – 1.
+  Advent
+LOCATION:Rostock\, Innenstadt
+DESCRIPTION:Geöffnet: 13:00–18:00 Uhr (teilnehmende Geschäfte\, v. a. 
+ Innenstadt)\nAbweichende Angaben: 12:00–17:00 Uhr (z. B. einzelne Center
+ )\nAnlass: Weihnachtsmarkt – 1. Advent\n\nDie Teilnahme ist freiwillig 
+ – nicht alle Geschäfte haben geöffnet.\n\nQuellen: kaufsonntag.de\, of
+ fline-einkaufen.com\, opensunday.de\, sonntagsoffen.de\, verkaufsoffener-s
+ onntag.com\, verkaufsoffener-sonntag.nrw\nAngaben ohne Gewähr.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

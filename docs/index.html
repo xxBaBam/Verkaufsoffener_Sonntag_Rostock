@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Verkaufsoffene Sonntage Rostock</title>
+<style>
+  :root { --bg:#fff; --fg:#1d1d1f; --muted:#666; --box:#f3f4f6; --line:#e3e5e8; --btn:#7a3fb0; --g:#1a73e8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#eee; --muted:#aaa; --box:#222; --line:#333; --btn:#9a62d1; --g:#4c8df6; } }
+  body { background:var(--bg); color:var(--fg); font:17px/1.5 system-ui,-apple-system,sans-serif; max-width:40rem; margin:1.5rem auto; padding:0 16px; }
+  h1 { font-size:1.6rem; margin-bottom:.25rem; }
+  .btn { display:block; text-align:center; text-decoration:none; color:#fff; background:var(--btn); padding:1rem; border-radius:12px; font-weight:600; margin:.75rem 0; }
+  .btn.g { background:var(--g); }
+  .box { background:var(--box); padding:.75rem 1rem; border-radius:12px; margin:1rem 0; }
+  code { word-break:break-all; font-size:.9rem; }
+  small, .muted { color:var(--muted); }
+  .list { list-style:none; padding:0; }
+  .list li { border-bottom:1px solid var(--line); padding:.6rem 0; }
+  .list .top { font-weight:600; }
+  .list .sub { font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<h1>Verkaufsoffene Sonntage in Rostock</h1>
+<p>Alle angekündigten Shopping-Sonntage in Rostock als Kalender – mit Uhrzeit und Anlass. Die Termine werden täglich
+aus mehreren Termin-Portalen abgeglichen; neue Termine kommen von selbst dazu.</p>
+
+<h2>Abonnieren</h2>
+<a class="btn" id="ios" href="sonntage.ics">iPhone / iPad / Mac: Abonnieren</a>
+<a class="btn g" id="google" href="https://calendar.google.com/">Android / Google Kalender: Abonnieren</a>
+<div class="box">
+<small><strong>iPhone:</strong> „Abonnieren“ → „Hinzufügen“. Für iPhone <em>und</em> iPad: Kalender-App → „Kalender“ → „Kalender hinzufügen“ → „Kalenderabo hinzufügen“ → Adresse unten eingeben → bei „Account“ iCloud wählen.<br>
+<strong>Google:</strong> Knopf antippen und „Hinzufügen“. Öffnet sich nur die App: im Chrome-Menü „Desktopwebsite“ einschalten oder am PC über calendar.google.com → „Weitere Kalender“ → „+“ → „Per URL“.</small>
+</div>
+<p>Abo-Adresse:</p>
+<div class="box"><code id="url"></code></div>
+
+<h2>Die nächsten Termine</h2>
+<ul class="list">
+<li><div class="top">So 29.11.2026 – Weihnachtsmarkt – 1. Advent</div><div class="sub">13:00–18:00 Uhr · 6 Quellen</div></li>
+</ul>
+<div class="box"><small><strong>Warnemünde und Markgrafenheide:</strong> Dort dürfen Geschäfte nach der Bäderregelung
+in der Saison ohnehin sonntags öffnen – diese allgemeine Sonntagsöffnung ist hier nicht einzeln eingetragen.</small></div>
+<p><small>Angaben ohne Gewähr. Die Teilnahme ist für Geschäfte freiwillig. Quellen: verkaufsoffener-sonntag.nrw, sonntagsoffen.de, verkaufsoffener-sonntag.com, offline-einkaufen.com, opensunday.de, kaufsonntag.de.</small></p>
+<script>
+  var url = location.href.replace(/[?#].*$/, "").replace(/[^/]*$/, "") + "sonntage.ics";
+  var webcal = url.replace(/^https?:/, "webcal:");
+  document.getElementById("url").textContent = url;
+  document.getElementById("ios").href = webcal;
+  document.getElementById("google").href = "https://calendar.google.com/calendar/render?cid=" + encodeURIComponent(webcal);
+</script>
+</body>
+</html>

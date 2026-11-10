@@ -1,0 +1,26 @@
+name: Erkundung (manuell)
+
+# Nur zur Fehlersuche bzw. um neue Quellen zu pruefen. Ergebnisse landen in debug/.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  explore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Quellen erkunden
+        run: python scripts/explore.py
+      - name: Ergebnisse speichern
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          git add debug
+          git commit -m "Erkundung: Ergebnisse aktualisiert" || echo "Keine Aenderungen"
+          git push

@@ -1,0 +1,48 @@
+{
+  "2026-03-29": {
+    "von": "13:00",
+    "bis": "18:00",
+    "andere_zeiten": [],
+    "anlass": "Ostermarkt Rostock",
+    "quellen": [
+      "verkaufsoffener-sonntag.nrw"
+    ]
+  },
+  "2026-10-04": {
+    "von": "13:00",
+    "bis": "18:00",
+    "andere_zeiten": [],
+    "anlass": "Herbstmarkt Rostock",
+    "quellen": [
+      "verkaufsoffener-sonntag.nrw"
+    ]
+  },
+  "2026-11-08": {
+    "von": "12:00",
+    "bis": "17:00",
+    "andere_zeiten": [
+      "13:00–17:00"
+    ],
+    "anlass": "Schlusstag der Rostocker Lichtwoche (Innenstadt)",
+    "quellen": [
+      "sonntagsoffen.de",
+      "verkaufsoffener-sonntag.com"
+    ]
+  },
+  "2026-11-29": {
+    "von": "13:00",
+    "bis": "18:00",
+    "andere_zeiten": [
+      "12:00–17:00"
+    ],
+    "anlass": "Weihnachtsmarkt – 1. Advent",
+    "quellen": [
+      "kaufsonntag.de",
+      "offline-einkaufen.com",
+      "opensunday.de",
+      "sonntagsoffen.de",
+      "verkaufsoffener-sonntag.com",
+      "verkaufsoffener-sonntag.nrw"
+    ]
+  }
+}
